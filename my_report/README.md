@@ -22,8 +22,8 @@ test
  ![assets1](https://user-images.githubusercontent.com/100956248/202172450-d7b48195-3af8-4a7f-94ca-317c2499e8cd.JPG)
 ![asset2](https://user-images.githubusercontent.com/100956248/202172491-a4b762c9-bba8-41b5-aad4-bfd5b94c82d0.JPG)
 ![Capture](https://user-images.githubusercontent.com/100956248/202172530-09b9994c-d36e-4bac-af2f-33f877502559.JPG)
-
-
+Και ένα βίντεο με το παιχνίδι να παίζει μέσα στον Editor του Unity
+https://user-images.githubusercontent.com/100956248/202175637-268de7eb-de97-407f-a038-549024d97a14.mp4
 # 2nd Deliverable
 
 
