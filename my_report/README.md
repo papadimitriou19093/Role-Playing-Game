@@ -6,7 +6,7 @@
 ### Digital & Serious Games Personal Repository: xxx
 
 # Introduction
-test
+Συγνώμη για την κακή εικόνα των κειμένων 
 
 # Summary
 
