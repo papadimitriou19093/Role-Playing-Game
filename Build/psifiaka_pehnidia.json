@@ -1,0 +1,16 @@
+{
+"companyName": "DPSD19093",
+"productName": "O NINJA TOU AGRINIOU",
+"productVersion": "3.1",
+"dataUrl": "psifiaka_pehnidia.data.unityweb",
+"wasmCodeUrl": "psifiaka_pehnidia.wasm.code.unityweb",
+"wasmFrameworkUrl": "psifiaka_pehnidia.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": true,
+"multithreading": false,
+"unityVersion": "2019.4.39f1"
+}
