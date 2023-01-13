@@ -89,6 +89,39 @@ https://user-images.githubusercontent.com/100956248/202175637-268de7eb-de97-407f
 
 # 3rd Deliverable 
 
+Αρχικά ξεκίνησα φτιάχνοντας το εφέ του καπνού για τον εχθρό. Από ένα ήδη υπάρχον sprite sheet που είχα στα assets μου χρησιμοποίησα δύο διαφορετικά sprites.
+![vfx_sprites_by_alvc57_d5alj64-pre](https://user-images.githubusercontent.com/100956248/212234844-72230b6f-4ec7-477a-b28f-60b57f2237bf.png)
+Αρχικά δημιούργησα απο το Hierarchy ένα καινούριο Particle System Effect και το ονόμασα smoke effect και έκανα enable το texture sheet animation με σκοπό να βάλω τα δικά μου sprites για τον καπνό. Έβαλα τα δύο sprites και τα έκανα να έχουν τυχαία αλλαγή ανα τα frames απο το start frames -> random between two Constants.
+![ta_sprites_kapnou](https://user-images.githubusercontent.com/100956248/212234863-e3f084ca-0145-4b58-a4b0-a09f14ec00de.JPG)
+Έφτιαξα το σχήμα του καπνού έτσι ώστε να μην εξαπλώνεται πάρα πολύ στον χάρτη και μετά έφτιαξα τον καπνό να σταματάει σε τυχαίες θέσεις ανάμεσα από δύο τιμές (1,5 -> 3), να αλλάζει μέγεθος μεταξύ δύο τιμών (0.5 -> 1)και ταχύτητα (0.5 -> 1.8).
+![kapnos_sprite](https://user-images.githubusercontent.com/100956248/212235120-06db34bd-5b3d-496b-82b0-fac4f77a39e2.JPG)
+![shape_kapnou](https://user-images.githubusercontent.com/100956248/212235079-64272a72-8ddc-436a-9efc-181ef37b5755.JPG)
+Στην συνέχεια έκανα τον καπνό να κάνει fade away. Από το Coler Over LifeTime πήγα στο Gradient Editor και έκανα τον καπνό να κάνει fade out. Τέλος για τον καπνό έφτιαξα την καμπύλη του size και άλλαξα την τιμή του κόνου σε 15.
+![kampili_size_kapnoy](https://user-images.githubusercontent.com/100956248/212235182-7779ed4a-25ee-4358-a753-8b5e8196f471.JPG)
+![inspector_kapnou](https://user-images.githubusercontent.com/100956248/212235204-0b19dbd6-f1c0-43b9-8934-e9e3afd8809d.JPG)
+Έκανα prefab το smoke effect και το έβαλα στο prefab του εχθρού φτιάχνοντας την θέση του. Στην συνέχεια έφτιαξα την κίνηση του καπνού όταν κινείται και ο εχθρός και τέλος έφτιαξα απο το script του εχθρού όταν δέχεται την σφαίρα από τον ήρωα να σταματάει ο καπνός. Άλλαξα sprite για τα collectables καταργόντας τελείως το παλιό και φτιάχνοντας καινούριο prefab με ίδιο Inspector.
+![collectable](https://user-images.githubusercontent.com/100956248/212235254-0ebeb917-23ae-4027-a186-d9b7a62166a0.JPG)
+Δημιούργησα ένα camvas στο Hierarchy του Mainscene και του έβαλα ένα image για να βάλω την μπάρα της ζωής του ήρωα φτιάχνοντας το scale της καθώς και να παραμένει στο ίδιο σημείο της οθόνης ασχέτος με το μέγεθος και το resolution της κάθε μιας.
+![health-bar-vuota-health-bar-pixel-art-clipart-large-size-png-image--pikpng](https://user-images.githubusercontent.com/100956248/212235422-1e6308e0-a7c0-4477-8808-5a6749482511.png)
+Έβαλα μια καινούργια εικόνα στον canva για το γέμισμα της μπάρας και με ένα καινούριο image από πάνω έβαλα το sprite για το γέμισμα της.
+![108-1087821_health-bar-health-bar-sprite-2d - Copy](https://user-images.githubusercontent.com/100956248/212235457-7419e925-6adc-4213-9795-b2796bd10f78.png)
+Τέλος, έγραψα το script για το health bar και το φόρτωσα στο canvas. Έφτιαξα το λογότυπο του παιχνιδιού και το έβαλα και αυτό στο canvas.
+![o-ninja](https://user-images.githubusercontent.com/100956248/212235526-446e5f9a-3e14-4c30-bbdd-4d119288888f.png)
+![Capture](https://user-images.githubusercontent.com/100956248/212236639-ce777715-eaf7-410c-b4c8-f57c6e212e8c.JPG)
+Στην συνέχεια βρήκα ένα καινούριο sprite sheet για τον npc και έφτιαξα το animation του το οποίο θα είναι σε idle κατάσταση.
+![obJ25PJ](https://user-images.githubusercontent.com/100956248/212235628-34bdfe81-3205-4205-8eb7-84ea7753e849.png)
+Αφού σέταρα καλύτερα το animation έκανα τον npc prefab και του έβαλα το Box Collider 2D. Έφτιαξα στο script του ήρωα την αλληλεπίδραση με τον npc και την σέταρα να γίνετε όταν πατιέται το πλήκτρο “X” και τέλος έβαλα έναν canvas στον npc. Στην συνέχεια βρήκα ένα ακόμα sprite sheet για την ταμπέλα 
+και έβαλα την ταμπέλα που θα εμφανίζεται το κείμενο του npc και έφτιαξα την εμφάνισή του. Έγραψα ένα καινούριο script για τον npc για να εμφανίζει το κείμενο μόνο όταν ο ήρωας πατήσει το “X” και έγραψα το κείμενο.
+![TAMPELA](https://user-images.githubusercontent.com/100956248/212235913-663b480a-f3af-49ca-b0f3-6b2b121b12ad.JPG)
+![ddd](https://user-images.githubusercontent.com/100956248/212236606-4ce8a200-30a1-4e8c-b7e5-14856c085f5a.JPG)
+Για του ήχους του παιχνιδιού αρχικά κατέβασα το soundtrack του σε μορφή wav και το φόρτωσα στο project σαν asset. Μετά βρήκα ένα μεγάλο πακέτο με πολλούς fx ήχους και τους φόρτωσα και αυτούς. Έφτιαξα ένα καινούριο Object για τον ήχο και από το Audio Source έβαλα το soundtrack. Στην συνέχεια έβαλα στο prefab του ήρωα ένα Audio Source και άλλαξα τα scripts του ήρωα και των collectables για να αναπαράγετε και ήχος όταν παίρνει ζωή ο ήρωας. Για το αρχικό μενού αρχικά έφτιαξα το background και δημιουργώντας ένα καινούργιο scene το έβαλα μέσα σε ένα καινούριο canvas.
+![aaa2](https://user-images.githubusercontent.com/100956248/212236057-f4e20a77-99d5-4ba4-8fab-50f8a82e75e5.jpg)
+Απο το UI -> TEXT BUTTONS έβαλα τρία διαφορετικά κουμπιά για να μπεις στο παιχνίδι, να διαβάσεις την ιστορία και να φύγεις από το παιχνίδι και έφτιαξα ένα καινούριο script για το μενού. 
+![MAIN_MENU](https://user-images.githubusercontent.com/100956248/212236103-b056606a-d38b-45aa-8cae-eb20be9888c2.JPG)
+Στο script αυτό καλόντας το Scene Management με την βοήθεια του build index έχτισα την εντολή να αλλάζει scenes απο την ιεραρχία των σκηνών στα build settings. Έφτιαξα την σειρά για τα κουμπιά, έφτιαξα και ένα καινούριο scene για το κείμενο της ιστορίας του παιχνιδιού με ένα κουμπί που σε πηγαίνει πίσω στο αρχικό μενού και έφτιαξα και ένα καινούριο script μονο για αυτό το κουμπί.
+![diavase](https://user-images.githubusercontent.com/100956248/212236142-b31912c8-b673-4e61-875e-755644f8d301.JPG)
+Τέλος τελειοποίησα τον χάρτη μου και έβαλα Audio στο μενού αλλά και στο scene της ιστορίας.
+
 
 # Conclusions
 
